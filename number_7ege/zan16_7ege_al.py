@@ -28,7 +28,14 @@ i = ceil(log2(4096))
 V = 1536 * 1024 * i
 for k in range(100, 0, -1):
     if 150 * V * k / (100 * 288 * 2 ** 13) == 240:
-        print(k)
+        print(100 - k)
+        break
 
+
+for V1 in range(100000000, 0, -1):
+    V2 = V1 / 1,4
+    V3 = (V1 * 4 * 16) / 2
+    V4 = V3 / 1,6
+print(V4 / V3)
 
 
